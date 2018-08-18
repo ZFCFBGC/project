@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*
+    基础样式
+    了解sass
+        *以编程的思想写css代码
+    sass语法：
+        *兼容css
+        *注释
+            *单行
+            *多行
+        *变量
+            *默认只能用在属性值
+ */
+a {
+  color: #58bc58; }
+
+a:hover {
+  color: #f40; }
+
+h1 {
+  font-size: 60px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 20px; }
+
+h4 {
+  font-size: 15px; }
+
+h5 {
+  font-size: 12px; }
+
+h6 {
+  font-size: 10px; }
