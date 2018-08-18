@@ -1,0 +1,22 @@
+/* 公共模块/重复性类*/
+/*头部部分*/
+#header{border-bottom: 1px solid #DDDDDD;}
+.header_l li{padding: 13px 0 9px 0;margin-right: 20px;}
+.header_l .active{padding:13px 0 7px 0;border-bottom: 2px solid #FF6655;}
+.header_l li a{display: block;font-size: 12px;font-weight: bold;color: #000000;}
+.header_l li:hover a{color: #FF6655;text-decoration: underline;}
+.header_r li{padding: 10px 0;}
+.header_r li a{display: block;font-size: 14px;font-weight: bold;color: #000000;line-height: 16px;border-right: 2px solid #999999;padding:0 13px;}
+.header_r li:last-of-type a{border-right: 0 none;}
+.header_r li i{display:inline-block;margin-right: 3px;}
+.header_r li:nth-of-type(3) i{color: #E71F19;}
+.header_r li:nth-of-type(4) i{color: #48C92F;}
+/*logo部分*/
+.logo_l{width:255px;height: 108px;background: #f40;text-indent: -9999px;}
+.logo_c{padding-top: 36px;height: 72px;}
+.logo_c input{width: 496px;height:34px;border:2px solid #FF6655;float: left;}
+.logo_c button{width: 90px;height: 38px;border:0 none;background: #FF6655;float: left;color:#fff;font-weight: bold;font-size: 16px;}
+.logo_c p{height: 34px;line-height: 34px;font-size: 12px;font-weight: bold;}
+.logo_c p a{color: #666666;display:inline-block;margin-right: 10px;}
+.logo_c p a:hover{color: #FF6655;text-decoration: underline;}
+.logo_r{width: 217px;height:108px;background: yellow;}

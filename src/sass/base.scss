@@ -1,26 +1,17 @@
-/*
-    基础样式
-    了解sass
-        *以编程的思想写css代码
-    sass语法：
-        *兼容css
-        *注释
-            *单行
-            *多行
-        *变量
-            *默认只能用在属性值
- */
-//变量
-$mainColor:#f40;
-$container:1200px;
-$sidebar:300px;
-$mainContent:800px;
 
-a{color:#58bc58;}
-a:hover{color:$mainColor;}
-
-@for $i from 1 to 7{
-    h#{$i}{
-        font-size:30px/$i*2;
-    }
+$mainColor:#fff;
+$container:1190px;
+body {font:12px Arial,Verdana,"\5b8b\4f53"; color:#666;background:$mainColor;}
+.container{width:$container;margin:0 auto}
+.clearfix::after{
+    content:"";
+    display:block;
+    height:0 ;
+    clear: both ;
+    overflow:hidden ;
+    visibility: hidden ;
 }
+.fl{float:left;}
+.fr{float:right;}
+.hide{display:none;}
+.ac{text-align:center;}
