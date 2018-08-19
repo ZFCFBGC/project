@@ -38,3 +38,73 @@
 .nav_c .s_nav .picture span{font-size: 16px;line-height: 24px;color:#666;display: inline-block;padding-top:5px;}
 .nav_c .s_nav .picture span a{color: #000;font-weight: bold;}
 .nav_r{width: 120px;border-left: 1px solid #E35342;border-right: 1px solid #E35342;line-height: 44px;height: 44px;text-align: center;}
+/*banner部分*/
+#banner .container{position: relative;}
+.lunbotu{width: 1190px;height: 380px;background: skyblue;}
+.banner_r{width: 270px;height: 364px;background: #fff;position: absolute;top:10px;right: 0;z-index: 10;}
+.banner_r li{margin-top: 1px;}
+.banner_r li a{display: inline-block;width: 270px;height: 90px;}
+.banner_r li i{display:inline-block;width: 38px;padding: 20px 15px 0 14px;height: 26px;line-height: 26px;font-size: 30px;color: #FF6655;}
+.banner_r li h4{display: inline-block;font-size: 24px;padding-top:10px;color: #FF6655;}
+.banner_r li h4 span{font-size: 14px;color:#66667D;}
+/*AD广告部分*/
+#ad{background: #F3F3F3;border-bottom:1px solid #ddd;}
+#ad .ad_c{border-left: 1px solid #ddd;height: 130px;}
+/*#ad .last{border-right: 1px solid #ddd;}*/
+#ad .ad_c div{padding: 15px;}
+#ad .ad_c p{float: left;height: 20px;line-height: 20px;font-size: 16px;color: #ff6655;font-weight: bold;padding:30px 15px 0 0;}
+#ad .ad_c p span{display: block;height: 16px;line-height: 16px;font-size: 14px;padding-bottom: 10px;color: #999999;}
+#ad .ad_c img{width: 100px;height: 100px;display: block;float: left;background: #f40;}
+#ad .ad_c h4{height: 18px;font-size: 18px;padding-bottom: 3px;}
+#ad .ad_c ul li{list-style: disc;height: 16px;font-size: 12px;line-height: 16px;padding-top: 10px;padding-left: 3px;}
+#ad .ad_c ul li a{color: #000000;}
+/*主体内容样式*/
+#dog{margin-bottom: 10px;}
+.pet h2{height: 44px;padding: 20px 0 10px 0;font-size: 40px;color: #ff6655;line-height: 44px;}
+.pet h2 i{display:inline-block;font-size: 40px;margin-right: 5px;}
+/*.pet .cont{border:1px solid #ddd;}*/
+.pet .cont .cont_l{width: 360px;height: 360px;padding:14px;border: 1px solid #ddd;}
+.pet .cont .cont_r{width: 799px;height: 388px;border:1px solid #ddd;border-left:0 none;}
+.cont .articles h5 a{height: 16px;line-height: 16px;padding:14px 0 2px 10px;display: inline-block;color: #ff6655;font-weight: bold;font-size: 16px;}
+.cont .articles .eat li{width: 180px;height: 170px;padding:5px 9px;border-right: 1px solid #ddd;}
+.cont .articles .eat img{display:block;width:180px;height: 120px;background: #f40;}
+.cont .articles .eat h6{height: 18px;line-height: 18px;font-size: 16px;padding-top: 6px;color: #333;text-align: center;}
+.cont .articles .eat p{font-size: 12px;line-height: 20px;height: 20px;text-align: center;color:#333;}
+.cont .articles .eat li:last-of-type{border-right:0 none;}
+.cont .articles .upkeep li{width: 236px;height: 90px;padding:15px 14px 5px 14px;border-right: 1px solid #ddd;}
+.cont .articles .upkeep li:last-of-type{border-right:0 none;}
+.cont .articles .upkeep img{width: 90px;height: 90px;background: #f40;display:block;float: left;}
+.cont .articles .upkeep h6{display:inline-block;font-size: 16px;line-height: 22px;color: #333;padding: 10px 0 0 10px;}
+.cont .articles .upkeep p{display: inline-block;font-size: 12px;line-height: 20px;color: #333;padding-left: 10px;}
+.pet .service{width:1188px;height: 178px;border: 1px solid #ddd;border-top:0 none;}
+.pet .service ul{border: 1px solid #ddd;background: #F3F3F3;width: 1188px;border-top:0 none;}
+.pet .service .forum{width: 360px;height: 152px;padding:14px;border-right: 1px solid #ddd;}
+.pet .service .forum h5 a{font-size: 16px;line-height: 16px;color: #ff6655;}
+.pet .service .forum div{height: 50px;margin-top: 15px;}
+.pet .service .forum img{width: 50px;height:50px;margin-right: 15px;float:left;display:block;background: #f40;}
+.pet .service .forum h6 {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-top: 6px;}
+.pet .service .forum p{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;color: #999;padding-top: 6px;}
+.pet .service .forum h6 a{font-size: 16px;color: #333;}
+.pet .service .wiki{width: 598px;height: 178px;}
+.pet .service .wiki h5 a{font-size: 16px;line-height: 16px;color: #ff6655;}
+.pet .service .breed{width: 200px;height: 178px;border-left: 1px solid #ddd;}
+/*promisee部分*/
+#promise{background: #ff6655;margin-top: 40px;}
+#promise ul{height: 90px;padding: 15px 35px;}
+#promise li{width: 197px;border-right: 1px dashed #ffb3aa;height:90px;text-align: center;color:#fff;}
+#promise li:last-of-type{border-right: 0 none;}
+/*links部分*/
+#links{background:#F3F3F3;}
+#links .links_c {padding:20px 70px;}
+#links .links_c h5{height: 16px;font-size: 16px;line-height: 16px;color: #666;}
+#links .links_c a{display:inline-block;height: 16px;line-height: 16px;font-size: 12px;margin:10px 10px 0 0;color: #666;}
+#links .chat{padding: 0px 70px 20px;}
+#links .chat li{width: 358px;height: 98px;margin-right: 12px;border:1px solid #ddd;}
+#links .chat li:last-of-type{width: 238px;}
+#links .chat img{display:block;}
+/*底部*/
+#footer .footer_c{padding: 20px 0;}
+#footer .footer_c p{text-align: center;font-size: 12px;line-height: 22px;height:22px;}
+#footer .footer_c p a{color: #333;display:inline-block;}
+#footer .footer_c p img{margin-right: 10px;}
+
