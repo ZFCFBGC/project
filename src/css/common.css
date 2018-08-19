@@ -20,3 +20,21 @@
 .logo_c p a{color: #666666;display:inline-block;margin-right: 10px;}
 .logo_c p a:hover{color: #FF6655;text-decoration: underline;}
 .logo_r{width: 217px;height:108px;background: yellow;}
+/*nav部分*/
+#nav{background:#FF6655;}
+#nav div>a,#nav .nav_c>li>a{color:#FFFFFF;font-size: 18px;font-weight: bold;line-height: 44px;}
+.nav_l{width: 92px;height: 44px;background: #EE5544;text-align: center;}
+
+.nav_c>li{padding: 0 18px;border-right: 1px solid #E35342;height: 44px;position: relative;}
+.nav_c>li>a>i{display: inline-block;margin-right: 3px;}
+.nav_c .s_nav{width: 670px;height: 276px;border:1px solid #DE4E3E;position: absolute;top: 42px;left: -1px;padding: 10px 0 15px 20px;}
+.nav_c .s_nav li:first-of-type{width: 464px;}
+.nav_c .s_nav dl{display:inline-block;width: 230px;height: 138px;}
+.nav_c .s_nav dl dt a{font-size: 16px;line-height: 18px;color:#FF6655;}
+
+.nav_c .s_nav dl dd a{display: inline-block;height: 16px;line-height: 16px;font-size: 14px;float: left;margin: 9px 15px 0 0;color: #666666;}
+.nav_c .s_nav .picture{width: 160px;height:276px;border-left: 1px dashed #ddd;padding:0 20px;text-align: center;}
+.nav_c .s_nav .picture .img{width: 160px;height:120px;background: yellow;}
+.nav_c .s_nav .picture span{font-size: 16px;line-height: 24px;color:#666;display: inline-block;padding-top:5px;}
+.nav_c .s_nav .picture span a{color: #000;font-weight: bold;}
+.nav_r{width: 120px;border-left: 1px solid #E35342;border-right: 1px solid #E35342;line-height: 44px;height: 44px;text-align: center;}
