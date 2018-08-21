@@ -17,3 +17,13 @@ gulp.task('compileSass',function(){
     .pipe(sass())
     .pipe(gulp.dest('./src/css/'))
 })
+gulp.task('compileJs',function(){
+    gulp.src('./src/sass/register.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./src/css/'))
+})
+// 自动化化编译
+gulp.task('autoSass',function(){
+    // 监听
+    gulp.watch('./src/sass/register.scss',['compileJs']);
+})

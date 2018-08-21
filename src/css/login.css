@@ -1,0 +1,16 @@
+/*头部*/
+#header{background: #F3F3F3;}
+#header .logo{width: 990px;margin: 0 100px;height: 88px;padding: 20px 0 15px 0;}
+#header .logo a{display: block;height: 88px;width: 180px;}
+#header .logo img{display:block;height: 88px;}
+#header .logo h1{font-size: 26px;color: #666;height: 40px;line-height: 40px;margin:25px 0 0 10px ;border-left:1px solid #ccc;padding-left: 10px;}
+/*核心内容板块*/
+#login .content{margin: 0 100px;border: 1px solid #DDDDDD;width: 970px;height: 380px;padding: 9px;}
+#login .content img{display:block;}
+/*底部*/
+#footer{background: #F3F3F3;}
+#footer .footer_c{padding: 20px 0;}
+#footer .footer_c p{text-align: center;font-size: 12px;line-height: 22px;height:22px;}
+#footer .footer_c p a{color: #333;display:inline-block;}
+#footer .footer_c p img{margin-right: 10px;}
+#footer .footer_c p a:hover{text-decoration: underline;}
