@@ -159,14 +159,18 @@
           font-size: 14px;
           display: block;
           float: left; }
-        #register .content .content_l .main .code span {
+        #register .content .content_l .main .code .yzm {
           display: block;
           width: 100px;
           height: 34px;
           margin: 4px 0 0 10px;
           background: #ccc;
-          float: left; }
-        #register .content .content_l .main .code a {
+          float: left;
+          text-align: center;
+          color: #fff;
+          font-size: 16px;
+          line-height: 34px; }
+        #register .content .content_l .main .code .btn {
           display: block;
           float: left;
           width: 84px;
@@ -174,7 +178,7 @@
           margin: 10px 0 0 20px;
           color: #333;
           font-size: 12px; }
-          #register .content .content_l .main .code a:hover {
+          #register .content .content_l .main .code .btn:hover {
             color: #ff6655;
             text-decoration: underline; }
         #register .content .content_l .main .note label {

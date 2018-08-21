@@ -15,8 +15,8 @@
 #login .content_r .yanzhen{width: 210px;height: 38px;padding: 5px 10px 5px 4px;border: 1px solid #ddd;float: left;}
 #login .content_r .yanzhen span{display:block;width: 100px;height: 38px;margin: 0 3px;font-size: 16px;color: #666;line-height: 38px;float: left;}
 #login .content_r .yanzhen input{display: block;float: left;height: 38px;line-height: 38px;font-size: 16px;width: 100px;}
-#login .content_r .login_forget .shengc{width: 100px;height: 38px;background: #ccc;margin:5px 10px 5px 4px;display: block;float: left;}
-#login .content_r .login_forget a{display: inline-block;height: 50px;line-height: 50px;margin-left: 20px;}
+#login .content_r .login_forget .shengc{width: 100px;height: 38px;background: #ccc;margin:5px 10px 5px 4px;display: block;float: left;color: #fff;text-align: center;line-height: 38px;font-size: 20px;font-weight: bold;}
+#login .content_r .login_forget #btn{display: inline-block;height: 50px;line-height: 50px;margin-left: 20px;}
 #login .content_r .login_forget a:hover{text-decoration: underline;}
 #login .content_r .login_cook{width: 410px;height: 16px;margin-top: 10px;}
 #login .content_r .login_cook label{display:block;float: left;height:16px;font-size: 12px;line-height: 16px;color: #666;}
