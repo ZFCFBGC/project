@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/login.css" />
@@ -27,27 +28,28 @@
                     </div>
                     <div class="content_r fr">
                         <div class="login_list">
-                            <i></i>
+                            <i class="icon-wo iconfont"></i>
                             <input type="text" name="username" placeholder="输入用户名/邮箱/手机号"/>
                         </div>
                         <div class="login_list">
-                            <i></i>
+                            <i class="icon-pinglun iconfont"></i>
                             <input type="text" name="password"/>
                         </div>
                         <div class="login_forget">
                             <div class="yanzhen">
                                 <span>验证码：</span>
                                 <input type="text" name="yanzhen"/>
-                                <span class="shengc"></span>
-                                <a href="#">换一张</a>
                             </div>
+                            <span class="shengc"></span>
+                            <a href="#">换一张</a>
                         </div>
                         <div class="login_cook">
                             <label for="remember">
-                                <input type="checkbox" id="remember" name="remember" />
+                                <input type="checkbox" id="remember" name="remember" />自动登录
                             </label>
                             <div class="forget">
                                 <a href="#">忘记密码</a>
+                                <span>|</span>
                                 <a href="#">免费注册</a>
                             </div>
                         </div>
@@ -58,7 +60,9 @@
                             <div class="links_t">使用合作网站登录</div>
                             <div class="links_c">
                                 <a href="#">支付宝</a>
+                                <span>|</span>
                                 <a href="#">新浪体育</a>
+                                <span>|</span>
                                 <a href="#">微信</a>
                             </div>
                         </div>

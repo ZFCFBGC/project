@@ -7,6 +7,30 @@
 /*核心内容板块*/
 #login .content{margin: 0 100px;border: 1px solid #DDDDDD;width: 970px;height: 380px;padding: 9px;}
 #login .content img{display:block;}
+#login .content_r{padding:25px 35px 0 0;}
+#login .content_r .login_list{width: 410px;height: 48px;border: 1px solid #ddd;padding: 0 13px 0 7px;}
+#login .content_r .login_list i{display: block;width: 30px;height: 48px;text-align:center;float: left;font-size: 24px;color: #ccc;line-height: 48px;margin-left: 12px;}
+#login .content_r .login_list input{display: block;float: left;font-size: 14px;color: #ccc;line-height: 48px;height: 48px;width: 340px;padding-left: 6px;}
+#login .content_r .login_forget{width: 410px;height: 50px;padding: 0 13px 0 0;margin-top: 10px;}
+#login .content_r .yanzhen{width: 210px;height: 38px;padding: 5px 10px 5px 4px;border: 1px solid #ddd;float: left;}
+#login .content_r .yanzhen span{display:block;width: 100px;height: 38px;margin: 0 3px;font-size: 16px;color: #666;line-height: 38px;float: left;}
+#login .content_r .yanzhen input{display: block;float: left;height: 38px;line-height: 38px;font-size: 16px;width: 100px;}
+#login .content_r .login_forget .shengc{width: 100px;height: 38px;background: #ccc;margin:5px 10px 5px 4px;display: block;float: left;}
+#login .content_r .login_forget a{display: inline-block;height: 50px;line-height: 50px;margin-left: 20px;}
+#login .content_r .login_forget a:hover{text-decoration: underline;}
+#login .content_r .login_cook{width: 410px;height: 16px;margin-top: 10px;}
+#login .content_r .login_cook label{display:block;float: left;height:16px;font-size: 12px;line-height: 16px;color: #666;}
+#login .content_r .login_cook div{height: 16px;float: right;}
+#login .content_r .login_cook span{display: inline-block;height: 16px;padding: 0 2px;}
+#login .content_r .login_cook a{color: #666;}
+#login .content_r .login_cook a:hover{color: #ff6655;}
+#login .content_r .btn a{width: 408px;height: 48px;border:1px solid #e35342 ;background: #ff6655;margin-top:15px ;font-size: 24px;font-weight: bold;line-height: 48px;text-align: center;color:#fff;display: block;}
+#login .content_r .links{margin-top:10px;}
+#login .content_r .links_t{height: 30px;text-align: center;font-size: 12px;line-height: 30px;color: #999;}
+#login .content_r .links_c{margin-top: 10px;height: 30px;line-height: 30px;font-size: 12px;text-align: center;}
+#login .content_r .links_c a{color:#666;}
+#login .content_r .links_c a:hover{color: #ff6655;}
+#login .content_r .links_c span{padding: 0 4px;}
 /*底部*/
 #footer{background: #F3F3F3;}
 #footer .footer_c{padding: 20px 0;}
