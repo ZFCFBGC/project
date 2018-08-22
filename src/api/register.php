@@ -13,7 +13,7 @@
     }else{//注册成功
         $sql1="insert into bqzhuce (name,password,phone) value ('$nickname','$password','$tel')";
         $result1=$conn->query($sql1);
-        if($result){
+        if($result1){
             echo 2;
         }
     };
