@@ -24,7 +24,7 @@
 #login .content_r .login_cook span{display: inline-block;height: 16px;padding: 0 2px;}
 #login .content_r .login_cook a{color: #666;}
 #login .content_r .login_cook a:hover{color: #ff6655;}
-#login .content_r .btn a{width: 408px;height: 48px;border:1px solid #e35342 ;background: #ff6655;margin-top:15px ;font-size: 24px;font-weight: bold;line-height: 48px;text-align: center;color:#fff;display: block;}
+#login .content_r .btn span{width: 408px;height: 48px;border:1px solid #e35342 ;background: #ff6655;margin-top:15px ;font-size: 24px;font-weight: bold;line-height: 48px;text-align: center;color:#fff;display: block;}
 #login .content_r .links{margin-top:10px;}
 #login .content_r .links_t{height: 30px;text-align: center;font-size: 12px;line-height: 30px;color: #999;}
 #login .content_r .links_c{margin-top: 10px;height: 30px;line-height: 30px;font-size: 12px;text-align: center;}
