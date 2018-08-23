@@ -26,4 +26,19 @@ gulp.task('compileJs',function(){
 gulp.task('autoSass',function(){
     // 监听
     gulp.watch('./src/sass/register.scss',['compileJs']);
-})
+});
+gulp.task('shopSass',function(){
+    //执行任务时，会执行这里的代码
+    //在此把sass编译成css
+    //2.找出sass文件
+    // console.log(666)
+    gulp.src('./src/sass/shop.scss')
+    // 编译scss->css
+    .pipe(sass())
+    .pipe(gulp.dest('./src/css/'))
+});
+// 自动化化编译
+gulp.task('autoShop',function(){
+    // 监听
+    gulp.watch('./src/sass/shop.scss',['shopSass']);
+});
