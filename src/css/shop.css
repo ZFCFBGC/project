@@ -394,6 +394,8 @@
                 color: #fff;
                 background: #ff6655;
                 text-decoration: underline; }
+          #dog .container .asider .goodcate .goodcate_c li .show {
+            display: block; }
         #dog .container .asider .goodcate .goodcate_c .active {
           background: #fff;
           border-right: 0 none; }
@@ -462,6 +464,120 @@
               margin-top: 6px;
               font-size: 16px;
               line-height: 22px; }
+      #dog .container .main #goodslist .list {
+        width: 790px; }
+        #dog .container .main #goodslist .list li {
+          width: 170px;
+          height: 396px;
+          display: inline-block;
+          margin-right: 10px;
+          padding: 5px;
+          border: 2px solid #fff; }
+          #dog .container .main #goodslist .list li:hover {
+            border: 2px solid #ee5533; }
+          #dog .container .main #goodslist .list li img {
+            width: 170px;
+            display: block;
+            height: 170px; }
+          #dog .container .main #goodslist .list li .sale {
+            display: inline-block;
+            height: 22px;
+            padding: 0 5px;
+            line-height: 22px;
+            font-size: 16px;
+            color: #ee5533;
+            font-weight: bold; }
+          #dog .container .main #goodslist .list li .price {
+            display: inline-block;
+            height: 22px;
+            padding: 0 5px;
+            line-height: 22px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #666; }
+          #dog .container .main #goodslist .list li .discount {
+            height: 22px;
+            font-size: 12px;
+            line-height: 22px;
+            padding: 0 5px;
+            border: 1px solid #EE5533;
+            color: #EE5533;
+            background: #fff;
+            width: 140px; }
+          #dog .container .main #goodslist .list li .name {
+            height: 36px;
+            padding-top: 4px;
+            line-height: 18px;
+            font-size: 12px;
+            color: #333; }
+            #dog .container .main #goodslist .list li .name:hover {
+              color: #ff6655; }
+          #dog .container .main #goodslist .list li .event {
+            height: 22px;
+            line-height: 22px;
+            font-size: 12px;
+            color: #ff6655;
+            padding: 4px 0; }
+          #dog .container .main #goodslist .list li div {
+            height: 32px;
+            margin-bottom: 15px; }
+            #dog .container .main #goodslist .list li div .volume {
+              color: #999;
+              font-size: 12px;
+              line-height: 16px; }
+            #dog .container .main #goodslist .list li div .review {
+              color: #333;
+              font-size: 12px;
+              line-height: 16px; }
+              #dog .container .main #goodslist .list li div .review a {
+                color: #ff6655; }
+          #dog .container .main #goodslist .list li .btncar {
+            display: inline-block;
+            width: 99px;
+            margin-right: 1px;
+            height: 30px;
+            font-size: 12px;
+            line-height: 30px;
+            background: #f3f3f3;
+            border: 1px solid #e6e6e6;
+            text-align: center; }
+            #dog .container .main #goodslist .list li .btncar i {
+              color: #ff6655; }
+            #dog .container .main #goodslist .list li .btncar:hover {
+              background: #ee5533;
+              color: #fff; }
+            #dog .container .main #goodslist .list li .btncar:hover i {
+              color: #fff; }
+          #dog .container .main #goodslist .list li .collect {
+            display: inline-block;
+            height: 30px;
+            font-size: 12px;
+            line-height: 30px;
+            background: #f3f3f3;
+            border: 1px solid #e6e6e6;
+            text-align: center;
+            width: 60px; }
+            #dog .container .main #goodslist .list li .collect:hover {
+              background: #ee5533;
+              color: #fff; }
+      #dog .container .main .pagination {
+        margin: 30px 0 30px 30px; }
+        #dog .container .main .pagination span {
+          display: inline-block;
+          height: 36px;
+          border: 1px solid #e6e6e6;
+          padding: 0 12px;
+          font-size: 14px;
+          line-height: 36px;
+          margin-right: 5px; }
+          #dog .container .main .pagination span:hover {
+            border: 1px solid #ff6655;
+            color: #ff6655; }
+        #dog .container .main .pagination .active {
+          background: #ee5533;
+          color: #fff; }
+          #dog .container .main .pagination .active:hover {
+            color: #fff; }
 
 #promise {
   background: #ff6655; }
