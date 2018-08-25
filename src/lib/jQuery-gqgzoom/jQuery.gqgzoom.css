@@ -1,0 +1,5 @@
+.gqg-zoom{position:relative;overflow:hidden;}
+.gqg-zoom img{display:block;}
+.gqg-zoom .zoom{display:none;position: absolute;width:30px;height:30px;border:1px solid #fc0;background-color:#ff0;background-color: rgba(255,255,0,.3);filter:alpha(Opacity=30);}
+.gqg-bigzoom{display:none;position: absolute;width:400px;height:300px;overflow:hidden;}
+.gqg-bigzoom img{position: absolute;left:0;right:0;width:1600px;height:1440px;}

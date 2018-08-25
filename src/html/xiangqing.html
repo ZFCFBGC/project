@@ -3,10 +3,264 @@
 <head>
     <meta charset="UTF-8" />
     <title>详情页</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/jQuery-gqgzoom/jQuery.gqgzoom.css" />
+    <link rel="stylesheet" type="text/css" href="../css/xiangqing.css" />
 </head>
 <body>
-   <h1>我是详情页</h1>
+   <div id="details">
+       <div id="top">
+            <div class="container clearfix">
+                <div class="top_l fl">
+                    <ul>
+                        <li class="fl shouc"><a href="#">
+                            <i class="icon-search iconfont"></i>收藏波奇商城
+                        </a>
+                        </li>
+                        <li class="fl city"><a href="#">广东</a>
+                            <div class="bigCity">
+                                <dl class="clearfix">
+                                    <dt>华东地区:</dt>
+                                    <dd>上海</dd>
+                                    <dd>江苏</dd>
+                                    <dd>浙江</dd>
+                                    <dd>安徽</dd>
+                                    <dd>山东</dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>华北东北:</dt>
+                                    <dd>北京</dd>
+                                    <dd>天津</dd>
+                                    <dd>河北</dd>
+                                    <dd>山西</dd>
+                                    <dd>内蒙古</dd>
+                                    <dd>辽宁</dd>
+                                    <dd>济宁</dd>
+                                    <dd>黑龙江</dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>华南东南:</dt>
+                                    <dd>广东</dd>
+                                    <dd>广西</dd>
+                                    <dd>海南</dd>
+                                    <dd>福建</dd>
+                                    <dd>四川</dd>
+                                    <dd>重庆</dd>
+                                    <dd>贵州</dd>
+                                    <dd>云南</dd>
+                                    <dd>西藏</dd>
+                                </dl>
+                                <dl class="clearfix last">
+                                    <dt>华中西北:</dt>
+                                    <dd>湖北</dd>
+                                    <dd>湖南</dd>
+                                    <dd>江西</dd>
+                                    <dd>河南</dd>
+                                    <dd>陕西</dd>
+                                    <dd>甘肃</dd>
+                                    <dd>青海</dd>
+                                    <dd>宁夏</dd>
+                                    <dd>新疆</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top_r fr">
+                    <ul class="clearfix">
+                        <li class="fl login"><a href="http://localhost:10086/src/html/login.html">登录</a></li>
+                        <li class="fl login"><a href="http://localhost:10086/src/html/register">注册</a></li>
+                        <li class="fl"><a href="#">手机版</a></li>
+                        <li class="fl"><a href="#">关注波奇</a></li>
+                        <li class="fl boqi"><i class="icon-liebiao iconfont"></i><a href="#">波奇首页</a>
+                            <div class="menu">
+                                <a href="#">
+                                    <i></i>
+                                    波奇服务
+                                </a>
+                                <a href="#">
+                                    <i></i>
+                                    波奇论坛
+                                </a>
+                                <a href="#">
+                                    <i></i>
+                                    波奇百科
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="logo">
+            <div class="container clearfix">
+                <div class="logo_l fl">波奇网</div>
+                <div class="logo_c fl clearfix">
+                    <input type="text" placeholder="请输入关键字"/>
+                    <button>搜索</button>
+                    <p>
+                        <span>热门搜索：</span>
+                        <a href="#">进口狗粮</a>
+                        <a href="#">进口猫粮</a>
+                        <a href="#">猫厕所</a>
+                        <a href="#">猫笼</a>
+                        <a href="#">口腔护理</a>
+                        <a href="#">美发毛肤</a>
+                    </p>
+                </div>
+                <div class="logo_r fr"> 
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <div class="container clearfix">
+                <div class="nav_l fl">
+                    <a href="#">
+                        全部商品分类
+                        <i class="icon-liebiao iconfont"></i>
+                    </a>
+                    <div class="sort">
+                        <div class="dog zoo">
+                            <h3>
+                                <i class="icon-3 iconfont"></i>
+                                <a href="#">狗狗用品</a>
+                                <span>&gt;</span>
+                            </h3>
+                            <div class="content">
+                                <span>主粮</span>
+                                <span>零食</span>
+                                <span>医疗</span>
+                                <span>保健</span>
+                                <span>出行</span>
+                                <span>日用</span>
+                                <span>玩具</span>
+                                <span>美容</span>
+                            </div>
+                            <div class="third">
+                                1
+                            </div>
+                        </div>
+                        <div class="cat zoo">
+                            <h3>
+                                <i class="icon-3 iconfont"></i>
+                                <a href="#">猫猫用品</a>
+                                <span>&gt;</span>
+                            </h3>
+                            <div class="content">
+                                <span>主粮</span>
+                                <span>零食</span>
+                                <span>医疗</span>
+                                <span>保健</span>
+                                <span>出行</span>
+                                <span>日用</span>
+                                <span>玩具</span>
+                                <span>美容</span>
+                            </div>
+                            <div class="third">
+                                2
+                            </div>
+                        </div>
+                        <div class="chongwu zoo">
+                            <h3>
+                                <i class="icon-3 iconfont"></i>
+                                <a href="#">奇趣小宠</a>
+                                <span>&gt;</span>
+                            </h3>
+                            <div class="content">
+                                <span>主粮</span>
+                                <span>零食</span>
+                                <span>医疗</span>
+                            </div>
+                            <div class="third">
+                                3
+                            </div>
+                        </div>
+                        <div class="water zoo">
+                            <h3>
+                                <i class="icon-3 iconfont"></i>
+                                <a href="#">水族市场</a>
+                                <span>&gt;</span>
+                            </h3>
+                            <div class="content">
+                                <span>主粮</span>
+                                <span>零食</span>
+                                <span>医疗</span>
+                                <span>保健</span>
+                                <span>出行</span>
+                            </div>
+                            <div class="third">
+                                4
+                            </div>
+                        </div>
+                        <div class="rim zoo">
+                            <h3>
+                                <i class="icon-3 iconfont"></i>
+                                <a href="#">萌宠周边</a>
+                                <span>&gt;</span>
+                            </h3>
+                            <div class="content">
+                                <span>主粮</span>
+                                <span>零食</span>
+                                <span>医疗</span>
+                            </div>
+                            <div class="third">
+                                5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_c fl">
+                    <ul class="clearfix">
+                        <li class="fl"><a href="#">首页</a></li>
+                        <li class="fl"><a href="#">狗狗</a></li>
+                        <li class="fl"><a href="#">猫猫</a></li>
+                        <li class="fl"><a href="#">小宠</a></li>
+                        <li class="fl"><a href="#">水族</a></li>
+                        <li class="fl"><a href="#">全球购</a></li>
+                        <li class="fl"><a href="#">创意生活</a></li>
+                        <li class="fl"><a href="#">品牌馆</a></li>
+                        <li class="fl"><a href="#">波奇服务</a></li>
+                    </ul>
+                </div>
+                <div class="nav_r fr">
+                    <div class="shopping">
+                        <i class="icon-gouwuche- iconfont"></i>
+                        <a href="#">购物车</a>
+                        <span id="number">1</span>
+                    </div>
+                    <div id="car"></div>
+                </div>
+            </div>
+        </div>
+        <div id="search">
+            <div class="container clearfix">
+                <div class="search_l fl clearfix">
+                    <div class="web fl">
+                        <a href="#">首页</a>
+                        <span>&gt;</span>
+                        <a href="#">狗狗专区</a>
+                        <span>&gt;</span>
+                        <a href="#">狗狗主粮</a>
+                    </div>
+                </div>
+                <div class="search_r fr">
+                    <a href="#">清空已选条件</a>
+                </div>
+            </div>
+        </div>
+        <div id="goods">
+            <div class="container">
+                <div id="main">
+                    
+                </div>
+            </div>
+        </div>
+        <div id="abc"></div>
+   </div>
    <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
    <script type="text/javascript" src="../js/xiangqing.js"></script>
+   <script type="text/javascript" src="../lib/jQuery-gqgzoom/jQuery.qgqzoom.js"></script>
+   
 </body>
 </html>

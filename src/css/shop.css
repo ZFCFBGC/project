@@ -279,21 +279,68 @@
         #nav .container .nav_r .shopping #number {
           display: inline-block;
           padding: 0 5px; }
-      #nav .container .nav_r #car {
+      #nav .container .nav_r #goods {
         position: absolute;
-        width: 100px;
-        height: 100px;
-        background: #f40;
+        width: 300px;
+        padding: 2px;
         right: 0;
         top: 36px;
-        display: none; }
-      #nav .container .nav_r:hover #car {
-        display: block; }
+        display: none;
+        border: 2px solid #fff;
+        background: #fff;
+        z-index: 100; }
+        #nav .container .nav_r #goods h2 {
+          width: 290px;
+          height: 46px;
+          padding-left: 10px;
+          font-size: 14px;
+          line-height: 46px;
+          color: #666;
+          background: #f3f3f3;
+          text-align: center; }
+        #nav .container .nav_r #goods #car {
+          width: 290px;
+          padding-left: 10px; }
+        #nav .container .nav_r #goods .price {
+          font-size: 14px;
+          line-height: 40px;
+          color: #666;
+          background: #f3f3f3;
+          width: 200px;
+          padding-left: 100px; }
+          #nav .container .nav_r #goods .price .sum {
+            color: #e53;
+            height: 40px;
+            display: inline-block; }
+          #nav .container .nav_r #goods .price .total {
+            color: #e53;
+            font-size: 22px;
+            font-weight: bold;
+            height: 40px;
+            display: inline-block; }
+        #nav .container .nav_r #goods .links {
+          width: 180px;
+          height: 40px;
+          background: #f3f3f3;
+          padding-left: 120px; }
+          #nav .container .nav_r #goods .links a {
+            display: inline-block;
+            background: #e53;
+            color: #fff;
+            font-size: 22px;
+            line-height: 36px;
+            width: 100px;
+            height: 36px;
+            text-align: center; }
+      #nav .container .nav_r:hover #goods {
+        display: block;
+        border: 2px solid #e53; }
 
 #search {
   background: #f3f3f3;
   padding-bottom: 8px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  z-index: 10; }
   #search .container {
     width: 990px;
     margin: 0 auto; }
@@ -466,15 +513,18 @@
               line-height: 22px; }
       #dog .container .main #goodslist .list {
         width: 790px; }
-        #dog .container .main #goodslist .list li {
+        #dog .container .main #goodslist .list .gqg {
           width: 170px;
-          height: 396px;
           display: inline-block;
           margin-right: 10px;
           padding: 5px;
           border: 2px solid #fff; }
-          #dog .container .main #goodslist .list li:hover {
+          #dog .container .main #goodslist .list .gqg:hover {
             border: 2px solid #ee5533; }
+        #dog .container .main #goodslist .list li {
+          width: 170px;
+          height: 324px;
+          display: inline-block; }
           #dog .container .main #goodslist .list li img {
             width: 170px;
             display: block;
@@ -531,7 +581,13 @@
               line-height: 16px; }
               #dog .container .main #goodslist .list li div .review a {
                 color: #ff6655; }
-          #dog .container .main #goodslist .list li .btncar {
+        #dog .container .main #goodslist .list .click {
+          width: 170px;
+          display: inline-block;
+          margin-right: 10px;
+          padding: 5px;
+          border: 2px solid #fff; }
+          #dog .container .main #goodslist .list .click .btncar {
             display: inline-block;
             width: 99px;
             margin-right: 1px;
@@ -541,14 +597,14 @@
             background: #f3f3f3;
             border: 1px solid #e6e6e6;
             text-align: center; }
-            #dog .container .main #goodslist .list li .btncar i {
+            #dog .container .main #goodslist .list .click .btncar i {
               color: #ff6655; }
-            #dog .container .main #goodslist .list li .btncar:hover {
+            #dog .container .main #goodslist .list .click .btncar:hover {
               background: #ee5533;
               color: #fff; }
-            #dog .container .main #goodslist .list li .btncar:hover i {
+            #dog .container .main #goodslist .list .click .btncar:hover i {
               color: #fff; }
-          #dog .container .main #goodslist .list li .collect {
+          #dog .container .main #goodslist .list .click .collect {
             display: inline-block;
             height: 30px;
             font-size: 12px;
@@ -557,7 +613,7 @@
             border: 1px solid #e6e6e6;
             text-align: center;
             width: 60px; }
-            #dog .container .main #goodslist .list li .collect:hover {
+            #dog .container .main #goodslist .list .click .collect:hover {
               background: #ee5533;
               color: #fff; }
       #dog .container .main .pagination {

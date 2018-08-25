@@ -107,12 +107,23 @@
                 a{display:inline-block;color:#fff;}
                 #number{display:inline-block;padding:0 5px;}
             }
-            #car{position:absolute;width:100px;height:100px;background:#f40;right:0;top:36px;display:none;}
-            &:hover #car{display:block;}
+            #goods{position:absolute;width:300px;padding:2px;right:0;top:36px;display:none;border:2px solid #fff;background:#fff;z-index:100;
+                h2{width:290px;height:46px;padding-left:10px;font-size:14px;line-height:46px;color:#666;background:#f3f3f3;text-align:center;}
+                #car{width:290px;padding-left:10px;}
+                .price{font-size:14px;line-height:40px;color:#666;background:#f3f3f3;width:200px;padding-left:100px;
+                    .sum{color:#e53;height:40px;display:inline-block;}
+                    .total{color:#e53;font-size:22px;font-weight:bold;height:40px;display:inline-block;}
+                }
+                .links{width:180px;height:40px;background:#f3f3f3;padding-left:120px;
+                    a{display:inline-block;background:#e53;color:#fff;font-size:22px;line-height:36px;width:100px;height:36px;text-align:center;}
+                }
+                
+            }
+            &:hover #goods{display:block;border:2px solid #e53;}
         }
     }
 }
-#search{background:#f3f3f3;padding-bottom:8px;margin-bottom:16px;
+#search{background:#f3f3f3;padding-bottom:8px;margin-bottom:16px;z-index:10;
         .container{width:990px;margin:0 auto;
             .search_l{width:385px;height:42px;
                 .web{padding-top:10px;
@@ -183,8 +194,11 @@
             }
             #goodslist{
                 .list{width:790px;
-                    li{width:170px;height:396px;display:inline-block;margin-right:10px;padding:5px;border:2px solid #fff;
+                    .gqg{width:170px;display:inline-block;
+                        margin-right:10px;padding:5px;border:2px solid #fff;
                         &:hover{border:2px solid #ee5533;}
+                    }
+                    li{width:170px;height:324px;display:inline-block;
                         img{width:170px;display:block;height:170px;}
                         .sale{display:inline-block;height:22px;padding:0 5px;line-height:22px;font-size:16px;color:#ee5533;font-weight:bold;}
                         .price{display:inline-block;height:22px;padding:0 5px;line-height:22px;font-size:14px;font-weight:bold;color:#666;}
@@ -199,10 +213,13 @@
                                 a{color:#ff6655;}
                             }
                         }
+                    }
+                    .click{width:170px;display:inline-block;margin-right:10px;padding:5px;border:2px solid #fff;
                         .btncar{display:inline-block;width:99px;margin-right:1px;height:30px;font-size:12px;line-height:30px;background:#f3f3f3;border:1px solid #e6e6e6;text-align:center;
                             i{color:#ff6655;}
                             &:hover{background:#ee5533;color:#fff;}
                             &:hover i{color:#fff;}
+
                         }
                         .collect{display:inline-block;height:30px;font-size:12px;line-height:30px;background:#f3f3f3;border:1px solid #e6e6e6;text-align:center;width:60px;
                             &:hover{background:#ee5533;color:#fff;}

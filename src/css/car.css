@@ -1,0 +1,220 @@
+/*头部*/
+#top {
+  border-bottom: 1px solid #ccc;
+  height: 36px; }
+  #top .container {
+    width: 990px;
+    margin: 0 auto; }
+    #top .container .top_l {
+      width: 209px;
+      height: 36px; }
+      #top .container .top_l .shouc {
+        width: 108px;
+        height: 36px;
+        padding-right: 15px; }
+        #top .container .top_l .shouc a {
+          font-size: 14px;
+          color: #666;
+          line-height: 36px;
+          text-align: center; }
+          #top .container .top_l .shouc a i {
+            color: #ff6655;
+            display: inline-block;
+            margin-right: 5px; }
+        #top .container .top_l .shouc:hover a {
+          color: #ff6655; }
+      #top .container .top_l .city {
+        width: 66px;
+        height: 36px;
+        padding: 0 10px;
+        position: relative; }
+        #top .container .top_l .city a {
+          color: #e45;
+          line-height: 36px;
+          font-size: 14px;
+          font-weight: bold;
+          text-align: center; }
+        #top .container .top_l .city .bigCity {
+          position: absolute;
+          left: -1px;
+          top: 35px;
+          width: 450px;
+          border: 1px solid #ccc;
+          border-top: 0 none;
+          display: none; }
+          #top .container .top_l .city .bigCity dl {
+            border-bottom: 1px dashed #ccc;
+            padding: 3px 15px; }
+            #top .container .top_l .city .bigCity dl dt {
+              font-size: 14px;
+              line-height: 36px;
+              color: #999;
+              float: left;
+              display: block;
+              height: 36px; }
+            #top .container .top_l .city .bigCity dl dd {
+              font-size: 14px;
+              line-height: 32px;
+              color: #999;
+              float: left;
+              display: block;
+              height: 32px;
+              padding: 2px 8px;
+              margin-right: 18px; }
+              #top .container .top_l .city .bigCity dl dd:hover {
+                color: #ff6655; }
+          #top .container .top_l .city .bigCity .last {
+            border-bottom: 0 none; }
+        #top .container .top_l .city:hover {
+          border: 1px solid #ccc;
+          width: 64px;
+          height: 34px;
+          border-bottom: 1px solid #fff; }
+        #top .container .top_l .city:hover .bigCity {
+          display: block;
+          background: #fff;
+          z-index: 10; }
+    #top .container .top_r {
+      height: 36px; }
+      #top .container .top_r li {
+        margin: 10px 0;
+        padding: 0  10px;
+        border-right: 1px solid #ccc;
+        font-size: 16px;
+        text-align: center; }
+        #top .container .top_r li a {
+          color: #333; }
+        #top .container .top_r li i {
+          color: #ff6655; }
+        #top .container .top_r li:hover a {
+          color: #ff6655;
+          text-decoration: underline; }
+      #top .container .top_r .boqi {
+        border-right: 0 none;
+        position: relative;
+        height: 36px; }
+        #top .container .top_r .boqi .menu {
+          width: 100px;
+          position: absolute;
+          left: -1px;
+          top: 36px;
+          display: none; }
+          #top .container .top_r .boqi .menu a {
+            display: block;
+            border-bottom: 1px dashed #ccc;
+            text-align: center;
+            padding: 0 8px;
+            line-height: 26px;
+            font-size: 14px;
+            height: 26px;
+            color: #333;
+            text-decoration: none; }
+            #top .container .top_r .boqi .menu a i {
+              color: #ff6655; }
+            #top .container .top_r .boqi .menu a:hover {
+              color: #ff6655;
+              text-decoration: underline; }
+        #top .container .top_r .boqi:hover {
+          margin: 0;
+          height: 34px;
+          border: 1px solid #ccc; }
+        #top .container .top_r .boqi:hover .menu {
+          display: block;
+          background: #fff; }
+/*logo部分*/
+#logo{background:#f3f3f3;}
+#logo .container {
+  width: 990px;
+  margin: 0 100px;
+  padding: 15px 0; }
+  #logo .container .logo_l {
+    width: 240px;
+    height: 100px;
+    text-indent: -9999px;
+    background: url(../img/logocar.png) no-repeat; }
+#logo .container .logo_c img{
+  display:block;height:100px;
+}
+
+/*核心板块*/
+#main{background:#f3f3f3;}
+#main .container{width:990px;margin:0 auto;}
+.derate{width:990px;height:20px;padding:10px 0;border-bottom:2px solid #e53;}
+.derate h2{height:20px;font-size: 20px;color:#ff6655;float:left;}
+.derate a{display: block;color:#333;font-size: 12px;line-height: 20px;height:20px;float:right;}
+.derate a:hover{color:#ff6655;}
+.hearder{width:990px;height:40px;border-bottom:1px solid #ddd;}
+.hearder div{font-size: 12px;line-height:40px;color:#333;text-align: center;}
+.hearder .all{width:113px;height:40px;}
+.hearder .goods{width:250px;height:40px;}
+.hearder .weight{width:90px;height:40px;}
+.hearder .price{width:120px;height:40px;}
+.hearder .number{width:120px;height:40px;}
+.hearder .subtotal{width:120px;height:40px;}
+.hearder .handle{width:155px;height:40px;}
+#goodslist{border:1px solid #ddd;width:988px;background:#fff;}
+#goodslist li{border-bottom: 1px dashed #ddd;height:60px;padding:30px 0;}
+#goodslist li:last-of-type{border-bottom: 0 none;}
+#goodslist li .choice{width:40px;height:60px;line-height: 60px;text-align: center;}
+#goodslist li img{display:block;width:80px;height:60px;}
+#goodslist li .sname{width:300px;height:60px;line-height:60px;font-size: 12px;text-align: center;color:#333;}
+#goodslist li .weight{width:90px;height:60px;line-height:60px;font-size: 12px;text-align: center;color:#333;}
+#goodslist li .cost{width:120px;height:60px;line-height:60px;font-size: 12px;text-align: center;color:#ff6655;}
+#goodslist li .dispose{width:120px;height:60px;text-align: center;color:#333;}
+#goodslist li .dispose span{display: inline-block;width:20px;height:20px;border:1px solid #ddd;line-height: 20px;margin: 20px 0;}
+#goodslist li .dispose .num{width:40px;}
+.pay{border:1px solid #ddd;width:964px;height:;padding:20px 12px 10px 12px;height:44px;background:#fff;}
+#goodslist li .total{width:120px;height:60px;line-height:60px;font-size: 12px;text-align: center;color:#ff6655;font-weight: bold;}
+#goodslist li .clear{width:90px;height:60px;line-height:60px;font-size: 12px;text-align: center;color:#333;}
+.pay .all{width:44px;line-height:44px;color:#333;font-size: 12px;}
+.pay .all:hover{color:#ff6655;}
+.pay .delete{margin: 0 24px;font-size: 12px;line-height:44px;}
+.pay .delete:hover{color:#ff6655;}
+.pay .allclear{margin: 0 24px;font-size: 12px;line-height:44px;}
+.pay .allclear:hover{color:#ff6655;}
+.pay .count{margin: 0 24px 0 300px;font-size: 12px;line-height:44px;}
+.pay .count span{display: inline-block;padding:0 2px;color:#ff6655;font-size: 12px;line-height: 44px;}
+.pay .count .total{line-height: 44px;font-size: 22px;font-weight: bold;}
+.pay .btn a{width:106px;height:40px;background: #e53;color:#fff;line-height:40px;font-size:22px;margin:2px 20px 2px 0;text-align: center;display: block;}
+/*链接部分*/
+#links {
+  background: #f3f3f3; }
+  #links .container {
+    width: 990px;
+    margin: 0 auto;
+    padding: 15px 0; }
+    #links .container dl {
+      width: 70px;
+      height: 121px;
+      margin-left: 110px; }
+      #links .container dl dt {
+        padding-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 16px;
+        color: #464646; }
+      #links .container dl dd {
+        padding-top: 6px;
+        font-size: 12px;
+        line-height: 14px; }
+        #links .container dl dd a {
+          color: #333; }
+        #links .container dl dd:hover a {
+          color: #ff6655; }
+/*底部*/
+#footer {
+  background: #FFF; }
+  #footer .footer_c {
+    padding: 20px 0; }
+    #footer .footer_c p {
+      text-align: center;
+      font-size: 12px;
+      line-height: 22px;
+      height: 22px; }
+      #footer .footer_c p a {
+        color: #333;
+        display: inline-block; }
+        #footer .footer_c p a:hover {
+          text-decoration: underline; }
+      #footer .footer_c p img {
+        margin-right: 10px; }

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车结算页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/car.css" />
+</head>
+<body>
+    <div id="car">
+        <div id="top">
+            <div class="container clearfix">
+                <div class="top_l fl">
+                    <ul>
+                        <li class="fl shouc"><a href="#">
+                            <i class="icon-search iconfont"></i>收藏波奇商城
+                        </a>
+                        </li>
+                        <li class="fl city"><a href="#">广东</a>
+                            <div class="bigCity">
+                                <dl class="clearfix">
+                                    <dt>华东地区:</dt>
+                                    <dd>上海</dd>
+                                    <dd>江苏</dd>
+                                    <dd>浙江</dd>
+                                    <dd>安徽</dd>
+                                    <dd>山东</dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>华北东北:</dt>
+                                    <dd>北京</dd>
+                                    <dd>天津</dd>
+                                    <dd>河北</dd>
+                                    <dd>山西</dd>
+                                    <dd>内蒙古</dd>
+                                    <dd>辽宁</dd>
+                                    <dd>济宁</dd>
+                                    <dd>黑龙江</dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>华南东南:</dt>
+                                    <dd>广东</dd>
+                                    <dd>广西</dd>
+                                    <dd>海南</dd>
+                                    <dd>福建</dd>
+                                    <dd>四川</dd>
+                                    <dd>重庆</dd>
+                                    <dd>贵州</dd>
+                                    <dd>云南</dd>
+                                    <dd>西藏</dd>
+                                </dl>
+                                <dl class="clearfix last">
+                                    <dt>华中西北:</dt>
+                                    <dd>湖北</dd>
+                                    <dd>湖南</dd>
+                                    <dd>江西</dd>
+                                    <dd>河南</dd>
+                                    <dd>陕西</dd>
+                                    <dd>甘肃</dd>
+                                    <dd>青海</dd>
+                                    <dd>宁夏</dd>
+                                    <dd>新疆</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top_r fr">
+                    <ul class="clearfix">
+                        <li class="fl login"><a href="http://localhost:10086/src/html/login.html">登录</a></li>
+                        <li class="fl login"><a href="http://localhost:10086/src/html/register">注册</a></li>
+                        <li class="fl"><a href="#">手机版</a></li>
+                        <li class="fl"><a href="#">关注波奇</a></li>
+                        <li class="fl boqi"><i class="icon-liebiao iconfont"></i><a href="#">波奇首页</a>
+                            <div class="menu">
+                                <a href="#">
+                                    <i></i>
+                                    波奇服务
+                                </a>
+                                <a href="#">
+                                    <i></i>
+                                    波奇论坛
+                                </a>
+                                <a href="#">
+                                    <i></i>
+                                    波奇百科
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="logo">
+            <div class="container clearfix">
+                <div class="logo_l fl">波奇网</div>
+                <div class="logo_c fr">
+                    <img src="../img/car2.PNG" alt="" />
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="container">
+                <div class="derate">
+                    <h2>波奇商城自营商品（江浙沪皖京津粤满59元即免邮费）</h2>
+                    <a href="http://localhost:10086/src/html/shop.html">继续购物&nbsp;&nbsp;&gt;</a>
+                </div>
+                <div class="hearder clearfix">
+                    <div class="all fl">
+                        <input type="checkbox" id="all"/>
+                        <label for="all">全选</label>
+                    </div>
+                    <div class="goods fl">商品</div>
+                    <div class="weight fl">重量</div>
+                    <div class="price fl">波奇价（元）</div>
+                    <div class="number fl">数量</div>
+                    <div class="subtotal fl">小计</div>
+                    <div class="handle fl">操作</div>
+                </div>
+                <div id="goodslist">
+                     
+                </div>
+                <div class="pay">
+                    <div class="all fl">
+                        <input type="checkbox" id="all"/>
+                        <label for="all">全选</label>
+                    </div>
+                    <div class="delete fl">删除选中的商品</div>
+                    <div class="allclear fl">清空购物车</div>
+                    <div class="count fl">
+                        已选则<span class="sum">1</span>商品
+                        ,总价:<span class="total"></span>
+                    </div>
+                    <div class="btn fr"><a href="#">去结算</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="links">
+            <div class="container clearfix">
+                <dl class="fl">
+                    <dt>新手上路</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                </dl>
+                <dl class="fl">
+                    <dt>购买方式</dt>
+                    <dd><a href="#">余额问题</a></dd>
+                    <dd><a href="#">余额问题</a></dd>
+                    <dd><a href="#">余额问题</a></dd>
+                    <dd><a href="#">余额问题</a></dd>
+                </dl>
+                <dl class="fl">
+                    <dt>配送方式</dt>
+                    <dd><a href="#">收费标准</a></dd>
+                    <dd><a href="#">收费标准</a></dd>
+                    <dd><a href="#">收费标准</a></dd>
+                </dl>
+                <dl class="fl">
+                    <dt>售后服务</dt>
+                    <dd><a href="#">收费标准</a></dd>
+                    <dd><a href="#">收费标准</a></dd>
+                    <dd><a href="#">收费标准</a></dd>
+                    <dd><a href="#">收费标准</a></dd>
+                </dl>
+                <dl class="fl">
+                    <dt>常见问题</dt>
+                    <dd><a href="#">注册登录</a></dd>
+                    <dd><a href="#">注册登录</a></dd>
+                    <dd><a href="#">注册登录</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="footer_c">
+                    <p>
+                        <a href="#">关于波奇</a>
+                        <span>|</span>
+                        <a href="#">友情链接</a>
+                        <span>|</span>
+                        <a href="#">诚聘英才</a>
+                        <span>|</span>
+                        <a href="#">联系我们</a>
+                        <span>|</span>
+                        <a href="#">网站地图</a>
+                        <span>|</span>
+                        <a href="#">意见反馈</a>
+                        <span>|</span>
+                        <a href="#">帮助中心</a>
+                        <span>|</span>
+                        客服热线：400-820-6098
+                    </p>
+                    <p>
+                        <a href="#"><i></i>沪公网安备 31011502004955号</a>
+                        <span>|</span>
+                        <a href="#">沪ICP备13034501号-2</a>
+                        <span>|</span>
+                        增值电信业务经营许可证:
+                        <a href="#">沪B2-20140120</a>
+                    </p>
+                    <p>Copyright © 2007-2018 Boqii.com All Rights Reserved 光橙（上海）信息科技有限公司 版权所有 
+                    </p>
+                    <p>公司地址：上海市浦东新区盛夏路399号亚芯科技园1号楼6楼</p>
+                    <p>
+                        <a href="#">
+                            <img src="../img/foot1.png" alt="" />
+                        </a>
+                        <a href="#">
+                            <img src="../img/foot2.png" alt="" />
+                        </a>
+                        <a href="#">
+                            <img src="../img/foot3.png" alt="" />
+                        </a>
+                        <a href="#">
+                            <img src="../img/foot4.png" alt="" />
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/car.js"></script>
+</body>
+</html>
