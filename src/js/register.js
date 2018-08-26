@@ -16,19 +16,15 @@ jQuery(function($){
         ymz.html(code());
     })
     //手机，邮箱注册切换
-    let tellphone=$('#register .tellphone')
-    let email=$('#register .email')
-    let current1=$('#register .current1')
-    let current2=$('#register .current2')
-    current1.on('click',function(){
-        tellphone.css("display","block");
-        email.css("display","none")
-    });
-    current2.on('click',function(){
-        tellphone.css("display","none");
-        email.css("display","block")
-    });
-    //注册页面注册验证正则，注册内容加入数据库
+    let content_l_tag=$('#register .content_l_tag');
+    content_l_tag.on('click','div',function(){
+         var i = $(this).index();
+         console.log(i)
+         $(this).addClass('active').siblings().removeClass('active');
+         $('.toggle .main').eq(i).show().siblings().hide();
+    })
+
+    //手机注册页面注册验证正则，注册内容加入数据库
     $('#submit').click('on',function(){
         var nickname=$('#nickname').val();
         var password=$('#password').val();
@@ -36,9 +32,8 @@ jQuery(function($){
         var tel=$('#tel').val();
         var code=$('#code').val();
         var isChecked = $('#agree').prop('checked')
-        //第一位必须是字母，后面必须是字母数字下划线的4-9位
-        if(!/^[a-z][\w]{3,8}$/.test(nickname)){
-            alert('昵称格式书写不正确')
+        if(!/^1[3-9]\d{9}$/.test(tel)){
+            alert('手机号不合法');
             return false;
         }
         //(?![0-9]+$)用来判定后面不全是数字，(?![a-zA-Z]+$)用来判定后面不全是字母（
@@ -48,6 +43,11 @@ jQuery(function($){
         }   
         if(password!=conform){
              alert('两次密码输入不一致，请重新确认')
+            return false;
+        }
+        //第一位必须是字母，后面必须是字母数字下划线的4-9位
+        if(!/^[a-z][\w]{3,8}$/.test(nickname)){
+            alert('昵称格式书写不正确')
             return false;
         }
         if(code!=ymz.html()){
