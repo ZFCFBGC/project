@@ -109,8 +109,24 @@
             }
             #goods{position:absolute;width:300px;padding:2px;right:0;top:36px;display:none;border:2px solid #fff;background:#fff;z-index:100;
                 h2{width:290px;height:46px;padding-left:10px;font-size:14px;line-height:46px;color:#666;background:#f3f3f3;text-align:center;}
-                #car{width:290px;padding-left:10px;}
-                .price{font-size:14px;line-height:40px;color:#666;background:#f3f3f3;width:200px;padding-left:100px;
+                #car{width:290px;padding-left:10px;
+                    li{background:#fff;width:280px;height:79px;border-bottom:1px dashed #ddd;padding:8px 10px 8px 0;}
+                    .picture{width:58px;height:58px;border:1px solid #ddd;
+                        img{width:58px;height:58px;}
+                    }
+                    .dispose{width:25px;margin-left:30px;
+                        span{width:20px;height:14px;display:block;text-align:center;border:1px solid #ddd;font-size:12px;line-height:14px;}
+                        .num{height:24px;line-height:24px;}
+                    }
+                    .content{width:140px;height:79px;
+                        p{font-size:12px;line-height:14px;}
+                        .delete{margin-top:10px;
+                            .total{font-size:12px;line-height:14px;color:#e53;display:inline-block;}
+                            .remove{display:inline-block;margin-left:20px;font-size:12px;line-height:14px;}
+                        }
+                    }
+                }
+                .price{font-size:14px;line-height:40px;color:#666;background:#f3f3f3;width:250px;padding-left:50px;
                     .sum{color:#e53;height:40px;display:inline-block;}
                     .total{color:#e53;font-size:22px;font-weight:bold;height:40px;display:inline-block;}
                 }

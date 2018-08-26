@@ -301,13 +301,58 @@
         #nav .container .nav_r #goods #car {
           width: 290px;
           padding-left: 10px; }
+          #nav .container .nav_r #goods #car li {
+            background: #fff;
+            width: 280px;
+            height: 79px;
+            border-bottom: 1px dashed #ddd;
+            padding: 8px 10px 8px 0; }
+          #nav .container .nav_r #goods #car .picture {
+            width: 58px;
+            height: 58px;
+            border: 1px solid #ddd; }
+            #nav .container .nav_r #goods #car .picture img {
+              width: 58px;
+              height: 58px; }
+          #nav .container .nav_r #goods #car .dispose {
+            width: 25px;
+            margin-left: 30px; }
+            #nav .container .nav_r #goods #car .dispose span {
+              width: 20px;
+              height: 14px;
+              display: block;
+              text-align: center;
+              border: 1px solid #ddd;
+              font-size: 12px;
+              line-height: 14px; }
+            #nav .container .nav_r #goods #car .dispose .num {
+              height: 24px;
+              line-height: 24px; }
+          #nav .container .nav_r #goods #car .content {
+            width: 140px;
+            height: 79px; }
+            #nav .container .nav_r #goods #car .content p {
+              font-size: 12px;
+              line-height: 14px; }
+            #nav .container .nav_r #goods #car .content .delete {
+              margin-top: 10px; }
+              #nav .container .nav_r #goods #car .content .delete .total {
+                font-size: 12px;
+                line-height: 14px;
+                color: #e53;
+                display: inline-block; }
+              #nav .container .nav_r #goods #car .content .delete .remove {
+                display: inline-block;
+                margin-left: 20px;
+                font-size: 12px;
+                line-height: 14px; }
         #nav .container .nav_r #goods .price {
           font-size: 14px;
           line-height: 40px;
           color: #666;
           background: #f3f3f3;
-          width: 200px;
-          padding-left: 100px; }
+          width: 250px;
+          padding-left: 50px; }
           #nav .container .nav_r #goods .price .sum {
             color: #e53;
             height: 40px;

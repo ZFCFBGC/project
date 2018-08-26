@@ -96,7 +96,6 @@ jQuery(function($){
                 }
 
                 // 加入购物车，存入cookie;
-                let car=document.querySelector('#car')
                 let list=document.querySelector('.list');
                 var carList=[];//用于保存购物车信息
                 var cookies=document.cookie.split('; ');
@@ -136,60 +135,81 @@ jQuery(function($){
                                 carList.push(goodsObj);
                             }
                         }
-                        
                         // 得到当前时间
                         var date = new Date();
                         // 设置保留时间
                         date.setDate(date.getDate()+30);
                         //存入cookie
                         document.cookie='carlist='+JSON.stringify(carList)+';expires=' + date.toUTCString();
-                        var goods = document.cookie.split('; ');
-                        for(var i=0;i<cookies.length;i++){
-                            var arr = goods[i].split('=');
-                            if(arr[0] === 'carlist'){
-                                carList = JSON.parse(arr[1]);
-                                console.log(carList);
-                            }
-                        }
-                        // 生成结构
-                        // if(carList){
-                        //     var shopping=document.createElement('ul');
-                        //     shopping.innerHTML='';
-                        //     shop.innerHTML=carList.map(function(item){
-                        //         return `<li data-guid="${item.guid}">
-                        //                     <div class="car_l">
-                        //                         <img src="${item.imgurl}" />
-                        //                     </div>
-                        //                     <div class="car_c">
-                        //                         <span class="add">+</span>
-                        //                         <span class="num">${item.qty}</span>
-                        //                         <span class="add">-</span>
-                        //                     </div>
-                        //                     <div  class="car_r">
-                        //                         <span><span>
-                        //                     </div>
-                        //                 </li>`
-                        //     })
-                        // }
-                        var goods=Cookie.get('carlist')
-                        console.log(goods);
-                        if(goods===''){
-                            goods=[];
-                        }else{
-                            goods=JSON.parse(goods)
-                        }
-                         //生成HTML结构
-                         // jiegou();
-                         // function jiegou(){}
-                         //    if(goods.length!=undefined){
-                         //        var ul=document.createElement('ul');
-                         //    }
-                         // }
+                        shopcar();
                     }
                 }
-
-
-
+                function shopcar(){
+                    let shopnum=document.querySelector('#number')
+                    let totals=document.querySelector('#goods .account .total')
+                    let numbers=document.querySelector('#goods .account .sum')
+                    var cookies=Cookie.get('carlist')
+                        console.log(goods);
+                    if(cookies===''){
+                            cookies=[];
+                        }else{
+                            cookies=JSON.parse(cookies)
+                        }
+                         // 生成HTML结构
+                        jiegou();
+                        function jiegou(){
+                            car.innerHTML='';
+                            if(cookies.length!=undefined){
+                                var amount=0;
+                                var qtys=0;
+                                var ul=document.createElement('ul');
+                                ul.innerHTML=cookies.map(function(item){
+                                     //计算总价 
+                                    amount+=item.total.slice(1)*item.qty;
+                                    qtys+=item.qty;
+                                    return `<li data-guid="${item.guid}">
+                                        <div class="picture fl">
+                                            <img src="${item.imgurl}" />
+                                        </div>
+                                        <div class="dispose fl">
+                                            <span class="reduce">-</span>
+                                            <span class="num">${item.qty}</span>
+                                            <span class="add">+</span>
+                                        </div>
+                                        <div class="content fr">
+                                            <p>${item.name}</p>
+                                            <div class="delete">
+                                                <span class="total">${(Number(item.total.slice(1))*Number(item.qty)).toFixed(2)}元</span>
+                                                <span class="remove">删除</span>
+                                            </div>
+                                        </div>
+                                    </li>`
+                                }).join('');
+                                // 把ul写入页面
+                                car.appendChild(ul);
+                                totals.innerHTML=amount.toFixed(2);
+                                numbers.innerHTML=qtys.toFixed(0);
+                                shopnum.innerHTML=qtys.toFixed(0)
+                            }
+                        }
+                        car.onclick=function(e){
+                            if(e.target.className=='remove'){
+                                var currentLi=e.target.parentNode.parentNode.parentNode;
+                                console.log(currentLi)
+                                var guid=currentLi.getAttribute('data-guid');
+                                for(var i=0;i<cookies.length;i++){
+                                    if(cookies[i].guid===guid){
+                                        cookies.splice(i,1);
+                                        break;
+                                    }
+                                }
+                                // 重写cookie
+                                Cookie.set('carlist',JSON.stringify(cookies));
+                                jiegou();
+                            }
+                        }
+                }
+                shopcar();
 
 
                 // 人气升序
@@ -230,8 +250,4 @@ jQuery(function($){
         goodslist.appendChild(ul)
     };
     getData(page);
-     // let btncar=document.querySelector('#goodslist .click .btncar')
-    // console.log(btncar)
-    
-
 })
