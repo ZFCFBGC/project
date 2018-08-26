@@ -279,16 +279,107 @@
         #nav .container .nav_r .shopping #number {
           display: inline-block;
           padding: 0 5px; }
-      #nav .container .nav_r #car {
+      #nav .container .nav_r #goods {
         position: absolute;
-        width: 100px;
-        height: 100px;
-        background: #f40;
+        width: 300px;
+        padding: 2px;
         right: 0;
         top: 36px;
-        display: none; }
-      #nav .container .nav_r:hover #car {
-        display: block; }
+        display: none;
+        border: 2px solid #fff;
+        background: #fff;
+        z-index: 100; }
+        #nav .container .nav_r #goods h2 {
+          width: 290px;
+          height: 46px;
+          padding-left: 10px;
+          font-size: 14px;
+          line-height: 46px;
+          color: #666;
+          background: #f3f3f3;
+          text-align: center; }
+        #nav .container .nav_r #goods #car {
+          width: 290px;
+          padding-left: 10px; }
+          #nav .container .nav_r #goods #car li {
+            background: #fff;
+            width: 280px;
+            height: 79px;
+            border-bottom: 1px dashed #ddd;
+            padding: 8px 10px 8px 0; }
+          #nav .container .nav_r #goods #car .minpicture {
+            width: 58px;
+            height: 58px;
+            border: 1px solid #ddd; }
+            #nav .container .nav_r #goods #car .minpicture img {
+              width: 58px;
+              height: 58px; }
+          #nav .container .nav_r #goods #car .dispose {
+            width: 25px;
+            margin-left: 30px; }
+            #nav .container .nav_r #goods #car .dispose span {
+              width: 20px;
+              height: 14px;
+              display: block;
+              text-align: center;
+              border: 1px solid #ddd;
+              font-size: 12px;
+              line-height: 14px; }
+            #nav .container .nav_r #goods #car .dispose .num {
+              height: 24px;
+              line-height: 24px; }
+          #nav .container .nav_r #goods #car .content {
+            width: 140px;
+            height: 79px; }
+            #nav .container .nav_r #goods #car .content p {
+              font-size: 12px;
+              line-height: 14px; }
+            #nav .container .nav_r #goods #car .content .delete {
+              margin-top: 10px; }
+              #nav .container .nav_r #goods #car .content .delete .total {
+                font-size: 12px;
+                line-height: 14px;
+                color: #e53;
+                display: inline-block; }
+              #nav .container .nav_r #goods #car .content .delete .remove {
+                display: inline-block;
+                margin-left: 20px;
+                font-size: 12px;
+                line-height: 14px; }
+        #nav .container .nav_r #goods .price {
+          font-size: 14px;
+          line-height: 40px;
+          color: #666;
+          background: #f3f3f3;
+          width: 250px;
+          padding-left: 50px; }
+          #nav .container .nav_r #goods .price .sum {
+            color: #e53;
+            height: 40px;
+            display: inline-block; }
+          #nav .container .nav_r #goods .price .total {
+            color: #e53;
+            font-size: 22px;
+            font-weight: bold;
+            height: 40px;
+            display: inline-block; }
+        #nav .container .nav_r #goods .links {
+          width: 180px;
+          height: 40px;
+          background: #f3f3f3;
+          padding-left: 120px; }
+          #nav .container .nav_r #goods .links a {
+            display: inline-block;
+            background: #e53;
+            color: #fff;
+            font-size: 22px;
+            line-height: 36px;
+            width: 100px;
+            height: 36px;
+            text-align: center; }
+      #nav .container .nav_r:hover #goods {
+        display: block;
+        border: 2px solid #e53; }
 
 #search {
   background: #f3f3f3;
@@ -347,8 +438,10 @@
       #search .container .search_r:hover a {
         color: #ff6655;}
 #goods .container{width:990px;margin:0 auto;}
-#main{margin-top:10px;}
-#main .picture{float:left;width:360px;height:420px;padding:19px;border:1px solid #ddd;display:inline-block;}
+#main{margin-top:10px;position:relative;}
+#main .picture{float:left;width:375px;height:420px;padding:19px;border:1px solid #ddd;display:inline-block;}
+#main .small{width:360px;height:40px;position:absolute;left:0;top:400px;}
+#main .small img{width:40px;height:40px;border:1px solid #ddd;margin-left:20px;}
 #main ul::after {
   content: "";
   display: block;

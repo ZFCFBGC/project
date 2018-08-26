@@ -6,7 +6,7 @@
     $tel=isset($_POST['tel'])?$_POST['tel']:null;
     $password=isset($_POST['password'])?$_POST['password']:null;
     $nickname=isset($_POST['nickname'])?$_POST['nickname']:null;
-    $sql="select*from bqzhuce where name='$nickname' and phone='$tel'";
+    $sql="select*from bqzhuce where name='$nickname' or phone='$tel'";
     $result=$conn->query($sql);
     if($result->num_rows>0){
         echo 1;//用户已存在

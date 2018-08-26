@@ -16,6 +16,12 @@ jQuery(function($){
                 console.log(res);
                 ul.innerHTML=`
                             <li class="picture"><img src="${res[0].imgurl}" data-big="${res[0].imgurl}" /></li>
+                            <li class="small">
+                                <img src="${res[0].imgurl}"  data-big="${res[0].imgurl}" alt="" />
+                                <img src="../img/zoom1.jpeg" data-big="../img/zoom1.jpeg">
+                                <img src="../img/zoom2.jpg" data-big="../img/zoom2.jpg">
+                                <img src="../img/zoom3.jpeg" data-big="../img/zoom3.jpeg">
+                            </li>
                             <li class="content" data-guid="${res[0].id}">
                                 <h2>${res[0].name}</h2>
                                 <p class="event">${res[0].event}</p>
@@ -40,8 +46,6 @@ jQuery(function($){
                                 </div>
                             </li>`
                 main.appendChild(ul);  
-                // 放大镜效果
-                $('#main .picture').gqgzoom();
                 // 存入cookie
                 var addcar=document.querySelector('#main .car');
                 var carList=[];//用于保存购物车信息
@@ -109,7 +113,85 @@ jQuery(function($){
                     date.setDate(date.getDate()+30);
                     //存入cookie
                     document.cookie='carlist='+JSON.stringify(carList)+';expires=' + date.toUTCString();
+                    shopcar();
                 }
+                let car=document.querySelector('#car')
+                function shopcar(){
+                    let shopnum=document.querySelector('#number')
+                    let totals=document.querySelector('#goods .account .total')
+                    let numbers=document.querySelector('#goods .account .sum')
+                    var cookies=Cookie.get('carlist')
+                        console.log(goods);
+                    if(cookies===''){
+                            cookies=[];
+                        }else{
+                            cookies=JSON.parse(cookies)
+                        }
+                         // 生成HTML结构
+                        jiegou();
+                        function jiegou(){
+                            car.innerHTML='';
+                            if(cookies.length!=undefined){
+                                var amount=0;
+                                var qtys=0;
+                                var ul=document.createElement('ul');
+                                ul.innerHTML=cookies.map(function(item){
+                                     //计算总价 
+                                    amount+=item.total.slice(1)*item.qty;
+                                    qtys+=item.qty;
+                                    return `<li data-guid="${item.guid}">
+                                        <div class="minpicture fl">
+                                            <img src="${item.imgurl}" />
+                                        </div>
+                                        <div class="dispose fl">
+                                            <span class="reduce">-</span>
+                                            <span class="num">${item.qty}</span>
+                                            <span class="add">+</span>
+                                        </div>
+                                        <div class="content fr">
+                                            <p>${item.name}</p>
+                                            <div class="delete">
+                                                <span class="total">${(Number(item.total.slice(1))*Number(item.qty)).toFixed(2)}元</span>
+                                                <span class="remove">删除</span>
+                                            </div>
+                                        </div>
+                                    </li>`
+                                }).join('');
+                                // 把ul写入页面
+                                car.appendChild(ul);
+                                totals.innerHTML=amount.toFixed(2);
+                                numbers.innerHTML=qtys.toFixed(0);
+                                shopnum.innerHTML=qtys.toFixed(0)
+                            }
+                        }
+                        car.onclick=function(e){
+                            if(e.target.className=='remove'){
+                                var currentLi=e.target.parentNode.parentNode.parentNode;
+                                console.log(currentLi)
+                                var guid=currentLi.getAttribute('data-guid');
+                                for(var i=0;i<cookies.length;i++){
+                                    if(cookies[i].guid===guid){
+                                        cookies.splice(i,1);
+                                        break;
+                                    }
+                                }
+                                // 重写cookie
+                                Cookie.set('carlist',JSON.stringify(cookies));
+                                jiegou();
+                            }
+                        }
+                }
+                shopcar();
+                // 放大镜效果
+                // $('#main .picture').gqgzoom();
+                $('#main .picture').gqgzoom({width:415,height:460}).addClass('box');
+
+                $('.small').on('click','img',function(){
+                    $('.picture img').attr({
+                        'src':this.src,
+                        'data-big':this.dataset.big
+                    });
+                })
             }
         });
     }
