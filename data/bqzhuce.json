@@ -1,0 +1,60 @@
+{
+"RECORDS":[
+{
+"id":12,
+"name":"guoqigeng",
+"password":"asdfg123",
+"email":null,
+"phone":"15072497577",
+"reg_time":"2018\/8\/26 17:55:17"
+},
+{
+"id":5,
+"name":"jordan",
+"password":"asdfg123",
+"email":null,
+"phone":"13635950470",
+"reg_time":"2018\/8\/22 10:40:50"
+},
+{
+"id":6,
+"name":"zhang",
+"password":"asdfg123",
+"email":null,
+"phone":"13298701234",
+"reg_time":"2018\/8\/22 10:49:03"
+},
+{
+"id":7,
+"name":"guoqi",
+"password":"asdfg123",
+"email":null,
+"phone":"13298701235",
+"reg_time":"2018\/8\/22 10:50:14"
+},
+{
+"id":8,
+"name":"dengz",
+"password":"asdfg123",
+"email":null,
+"phone":"13298702345",
+"reg_time":"2018\/8\/22 10:52:14"
+},
+{
+"id":9,
+"name":"whqrt",
+"password":"asdfg123",
+"email":null,
+"phone":"13635981234",
+"reg_time":"2018\/8\/22 10:58:08"
+},
+{
+"id":11,
+"name":"asdfg",
+"password":"asdfg123",
+"email":null,
+"phone":"18379930470",
+"reg_time":"2018\/8\/26 15:28:43"
+}
+]
+}

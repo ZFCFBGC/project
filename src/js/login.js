@@ -35,7 +35,7 @@ jQuery(function($){
                     switch(data){
                         case 1:
                             alert("登录成功");
-                            window.location.href="http://localhost:10086/src/index.html";
+                            window.location.href="../index.html";
                             break;
                         case 2:
                             alert("账户或者密码错误，请重新输入");

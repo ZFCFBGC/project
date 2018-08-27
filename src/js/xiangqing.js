@@ -86,7 +86,7 @@ jQuery(function($){
                     goodsObj.imgurl=picture.children[0].getAttribute('src')
                     goodsObj.qty=num.innerHTML*1;
                     goodsObj.weight=currenSpan.innerHTML;
-                    goods.name=children[0].innerHTML;
+                    goodsObj.name=children[0].innerHTML;
                     goodsObj.total=children[2].children[0].innerHTML;
                     goodsObj.price=children[2].children[1].innerHTML;
                     //判断cookies是否为空
@@ -178,12 +178,12 @@ jQuery(function($){
                                 // 重写cookie
                                 Cookie.set('carlist',JSON.stringify(cookies));
                                 jiegou();
+                                window.location.reload();
                             }
                         }
                 }
                 shopcar();
                 // 放大镜效果
-                // $('#main .picture').gqgzoom();
                 $('#main .picture').gqgzoom({width:415,height:460}).addClass('box');
 
                 $('.small').on('click','img',function(){
@@ -195,7 +195,4 @@ jQuery(function($){
             }
         });
     }
-    
-    // 放大镜效果
-
 })

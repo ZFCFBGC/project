@@ -68,6 +68,7 @@ jQuery(function($){
             // 重写cookie
             Cookie.set('carlist',JSON.stringify(cookies));
             jiegou();
+            window.location.reload();
         }
         if(e.target.className==='add'){
             var num=e.target.previousElementSibling;

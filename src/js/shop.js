@@ -206,6 +206,7 @@ jQuery(function($){
                                 // 重写cookie
                                 Cookie.set('carlist',JSON.stringify(cookies));
                                 jiegou();
+                                window.location.reload();
                             }
                         }
                 }

@@ -77,7 +77,7 @@ jQuery(function($){
                             break;
                         case 2://注册成功
                             alert("注册成功！");
-                            window.location.href="http://localhost:10086/src/html/login.html";
+                            window.location.href="login.html";
                             break;
                     }    
                 }
